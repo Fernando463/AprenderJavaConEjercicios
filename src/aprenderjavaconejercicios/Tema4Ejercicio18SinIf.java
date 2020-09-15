@@ -6,7 +6,7 @@ package aprenderjavaconejercicios;
 
 import java.util.Scanner;
 
-public class Tema4Ejercicio18 {
+public class Tema4Ejercicio18SinIf {
   
   public static void main(String[] args){
     
