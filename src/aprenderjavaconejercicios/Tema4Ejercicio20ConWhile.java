@@ -15,29 +15,32 @@ public class Tema4Ejercicio20ConWhile {
   public static void main(String[] args){
    
     Scanner sc = new Scanner(System.in);
-    System.out.println("Vamos a comprobar si un número es capicua ( si se lee igual"
+    System.out.println("Vamos a comprobar si un número es capicúa ( si se lee igual"
       + " de\n izquierda a derecha que de derecha a izquierda).");
     System.out.print("Introduce un número entero positivo: ");
     int num = sc.nextInt();
     
     if(((num >= 10) && (num <= 99)) && ((num % 10) == (num / 10))){  // Números entre 10 y 99, comparamos el primer dígito con
-      System.out.println("El número " + num + " es capicúa");        // el segundo.
+      System.out.println("El número " + num + " es capicúa.");        // el segundo.
     }
-    if(((num >= 100) && (num <= 999)) && ((num % 10) == (num / 100))){  //Números entre 100 y 999, comparamos último con primero
-      System.out.println("El número " + num + " es capicúa");     
+    else if(((num >= 100) && (num <= 999)) && ((num % 10) == (num / 100))){  //Números entre 100 y 999, comparamos último con primero
+      System.out.println("El número " + num + " es capicúa.");     
     }
-    if(((num >= 1000) && (num <= 9999)) && ((num % 10) == (num / 1000)) &&  //Números entre 1.000 9.999, comparamos último con
+    else if(((num >= 1000) && (num <= 9999)) && ((num % 10) == (num / 1000)) &&  //Números entre 1.000 9.999, comparamos último con
         (num/10)%10 == ((num / 100)%10)){                                   // primero y penúltimo con segundo.                                     
-      System.out.println("El número " + num + " es capicúa"); 
+      System.out.println("El número " + num + " es capicúa."); 
     }
-     if(((num >= 10000) && (num <= 99999)) && ((num % 10) == (num / 10000)) &&  //Números entre 1.000 9.999, comparamos último con
+    else if(((num >= 10000) && (num <= 99999)) && ((num % 10) == (num / 10000)) &&  //Números entre 1.000 9.999, comparamos último con
         (num/10)%10 == ((num / 1000)%10)){                                      // primero y penúltimo con segundo. 
-      System.out.println("El número " + num + " es capicúa"); 
+      System.out.println("El número " + num + " es capicúa."); 
+    }
+    else if(num > 99999){
+        System.out.println("No introduzcas números de más de cinco dígitos");
     }
     
     
     else{
-      System.out.println("El número " + num + " no es capicúa");
+      System.out.println("El número " + num + " no es capicúa.");
     }
   }
   
