@@ -22,5 +22,5 @@ public class Tema5Ejercicio13 {
         System.out.println("Positivos: " + positivo + "\n" + "Negativos: " + (10 - positivo));
         
     }
-    
-}
+        }
+
